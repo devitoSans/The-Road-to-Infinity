@@ -1,5 +1,13 @@
 #include <dve/header.h>
 
+#include <filesystem>
+#include <iostream>
+
+std::string getFullPath() {
+    std::filesystem::path cwd = std::filesystem::current_path();
+    return cwd.string();
+}
+
 int main() {
     std::cout << "\n\nCH 1 : GETTING STARTED\n";
 
@@ -18,7 +26,7 @@ int main() {
     glfwSetFramebufferSizeCallback(window, opengl::updateFramebuffer);
 
     // Paths
-    std::string par_path = "C:/Users/devit/C++ Program VSCode/zOpenGL/PRACTICE/";
+    std::string par_path = getFullPath();
     std::string v_path = par_path + "vertex.glsl";
     std::string f_path = par_path + "fragment.glsl";
     
