@@ -1,6 +1,6 @@
-C:/Users/devit/C++ Program VSCode/zOpenGL/PRACTICE/build/CMakeFiles/STB_IMAGE.dir
-C:/Users/devit/C++ Program VSCode/zOpenGL/PRACTICE/build/CMakeFiles/GLAD.dir
-C:/Users/devit/C++ Program VSCode/zOpenGL/PRACTICE/build/CMakeFiles/EXECUTE.dir
-C:/Users/devit/C++ Program VSCode/zOpenGL/PRACTICE/build/CMakeFiles/chapter1.dir
-C:/Users/devit/C++ Program VSCode/zOpenGL/PRACTICE/build/CMakeFiles/edit_cache.dir
-C:/Users/devit/C++ Program VSCode/zOpenGL/PRACTICE/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Devito/Visual Studio Code/C++/The-Road-to-Infinity/PRACTICE/build/CMakeFiles/STB_IMAGE.dir
+C:/Users/Devito/Visual Studio Code/C++/The-Road-to-Infinity/PRACTICE/build/CMakeFiles/GLAD.dir
+C:/Users/Devito/Visual Studio Code/C++/The-Road-to-Infinity/PRACTICE/build/CMakeFiles/EXECUTE.dir
+C:/Users/Devito/Visual Studio Code/C++/The-Road-to-Infinity/PRACTICE/build/CMakeFiles/chapter1.dir
+C:/Users/Devito/Visual Studio Code/C++/The-Road-to-Infinity/PRACTICE/build/CMakeFiles/edit_cache.dir
+C:/Users/Devito/Visual Studio Code/C++/The-Road-to-Infinity/PRACTICE/build/CMakeFiles/rebuild_cache.dir

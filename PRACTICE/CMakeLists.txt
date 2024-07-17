@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.0.0)
 
 project("my_project")
 
+set(CXX_STANDARD 17)
+set(CXX_STANDARD_REQUIRED TRUE)
+
 include_directories(
     resources/libraries/include
 )
