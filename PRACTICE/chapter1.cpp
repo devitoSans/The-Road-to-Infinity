@@ -3,7 +3,24 @@
 #include <filesystem>
 #include <iostream>
 
-std::string getFullPath() {
+std::string goToParentPath(std::string path, int how_many = 1) {
+    int index = path.length() - 1;
+    // char(92) = '\'
+    while(index >= 0 && path[index] != char(92) && path[index] != '/') {
+        path.pop_back();
+        index--;
+    }
+    return path;
+}
+
+std::string addPath(std::string a, std::string b) {
+    std::filesystem::path dir(a);
+    std::filesystem::path file(b);
+    std::filesystem::path full_path = dir / file;
+    return full_path.string();
+}
+
+std::string getRootPath() {
     std::filesystem::path cwd = std::filesystem::current_path();
     return cwd.string();
 }
@@ -26,9 +43,13 @@ int main() {
     glfwSetFramebufferSizeCallback(window, opengl::updateFramebuffer);
 
     // Paths
-    std::string par_path = getFullPath();
-    std::string v_path = par_path + "vertex.glsl";
-    std::string f_path = par_path + "fragment.glsl";
+    std::string par_path = goToParentPath(getRootPath());
+    std::cout << par_path << "\n";
+    std::string v_path = addPath(par_path, "vertex.glsl");
+    std::string f_path = addPath(par_path, "fragment.glsl");
+    // std::string v_path = "vertex.glsl";
+    // std::string f_path = "fragment.glsl";
+    std::cout << v_path << "\n" << f_path << "\n";
     
     // Setting up Vertex shader and fragment shader, and linking them into one program shader
     opengl::Shader vertexShader;

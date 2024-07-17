@@ -1,2 +1,0 @@
-C:\PROGRA~1\mingw64\bin\ar.exe qc libstb_image.a CMakeFiles/stb_image.dir/stb_image/temp.cpp.obj
-C:\PROGRA~1\mingw64\bin\ranlib.exe libstb_image.a
